@@ -13,12 +13,11 @@
                 <li class="nav-item{% if '/' == request.path %} active{% endif %} mr-3">
                     <a class="nav-link" href="{% url 'index' %}">Home</a>
                 </li>
-
                 <li class="nav-item{% if '/about' == request.path %} active{% endif %} mr-3">
                     <a class="nav-link" href="{% url 'about' %}">About</a>
                 </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="listings.html">Featured Listings</a>
+                <li class="nav-item{% if '/listings' == request.path %} active{% endif %} mr-3">
+                    <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
                 </li>
             </ul>
 
